@@ -1,13 +1,12 @@
-// Select the element with class 'four-heading-line'
-const headingElement = document.querySelector('.four-heading-line');
+// Select the target container by ID
+const targetContainer = document.getElementById('TOTAL_AMT_LCY');
 
-// Select the last '.row-container' element
-const allRowContainers = document.querySelectorAll('.row-container');
-const lastRowContainer = allRowContainers[allRowContainers.length - 3];
+// Select all elements with class 'four-heading-line'
+const headingElements = document.querySelectorAll('.four-heading-line');
 
-// Insert the headingElement after the last '.row-container'
-if (headingElement && lastRowContainer) {
-  lastRowContainer.parentNode.insertBefore(headingElement, lastRowContainer.nextSibling);
+// Append each 'four-heading-line' element to the target container
+if (targetContainer && headingElements.length > 0) {
+  headingElements.forEach(element => {
+    targetContainer.appendChild(element);
+  });
 }
-
-});
