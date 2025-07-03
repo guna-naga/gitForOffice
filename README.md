@@ -1,12 +1,12 @@
-// Select the target container by ID
-const targetContainer = document.getElementById('TOTAL_AMT_LCY');
+// Select the parent container with class '3_div'
+const parentContainer = document.querySelector('.3_div');
 
 // Select all elements with class 'four-heading-line'
 const headingElements = document.querySelectorAll('.four-heading-line');
 
-// Append each 'four-heading-line' element to the target container
-if (targetContainer && headingElements.length > 0) {
+// Append each heading element to the bottom of the 3_div container
+if (parentContainer && headingElements.length > 0) {
   headingElements.forEach(element => {
-    targetContainer.appendChild(element);
+    parentContainer.appendChild(element);
   });
 }
