@@ -1,18 +1,13 @@
-function getDaysBetweenDates(date1, date2) {
-  // Helper to convert dd-mm-yyyy to Date
-  function parseDate(str) {
-    const [day, month, year] = str.split("-").map(Number);
-    return new Date(year, month - 1, day); // Month is 0-based
-  }
+// Select the element with class 'four-heading-line'
+const headingElement = document.querySelector('.four-heading-line');
 
-  const d1 = parseDate(date1);
-  const d2 = parseDate(date2);
+// Select the last '.row-container' element
+const allRowContainers = document.querySelectorAll('.row-container');
+const lastRowContainer = allRowContainers[allRowContainers.length - 3];
 
-  const timeDiff = Math.abs(d2 - d1); // Difference in milliseconds
-  const dayDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)); // Convert to days
-
-  return dayDiff;
+// Insert the headingElement after the last '.row-container'
+if (headingElement && lastRowContainer) {
+  lastRowContainer.parentNode.insertBefore(headingElement, lastRowContainer.nextSibling);
 }
 
-// Example usage:
-console.log(getDaysBetweenDates("01-07-2025", "03-07-2025")); // Output: 2
+});
