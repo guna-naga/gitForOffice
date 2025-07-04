@@ -1,17 +1,43 @@
-function moveFourHeadingLineToBottom() {
-    // Select the target container
-    const targetContainer = $('#3_div');
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Read File and Extract IDs</title>
+</head>
+<body>
+  <h2>Select HTML file:</h2>
+  <input type="file" id="fileInput" />
 
-    if (targetContainer.length === 0) {
-        console.warn('#3_div not found.');
-        return;
-    }
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (!file) return;
 
-    // Find all elements with class 'four-heading-line'
-    const elementsToMove = $('.four-heading-line');
+      const reader = new FileReader();
 
-    // Move each one to the bottom of #3_div
-    elementsToMove.each(function () {
-        $(this).appendTo(targetContainer);
+      reader.onload = function (event) {
+        const content = event.target.result;
+
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(content, "text/html");
+
+        // Get all elements with id and name, and not type=hidden
+        const elements = doc.querySelectorAll('[id][name]');
+        const validIds = [];
+
+        elements.forEach(el => {
+          const type = el.getAttribute('type');
+          if (!type || type.toLowerCase() !== 'hidden') {
+            validIds.push(el.id);
+          }
+        });
+
+        console.log("Valid IDs:", validIds);
+        alert("IDs found:\n" + validIds.join('\n'));
+      };
+
+      reader.readAsText(file);
     });
-}
+  </script>
+</body>
+</html>
