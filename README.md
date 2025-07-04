@@ -1,52 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Read HTML File and Extract IDs</title>
-</head>
-<body>
-  <h3>Select an HTML file:</h3>
-  <input type="file" id="fileInput" accept=".html,.htm">
+import { useState } from "react";
+import "h8k-components";
 
-  <script>
-    document.getElementById("fileInput").addEventListener("change", function (e) {
-      const file = e.target.files[0];
+import "./App.css";
 
-      if (!file) {
-        alert("No file selected.");
-        return;
-      }
+function App() {
+  const [items, setItems] = useState([]);
+  const [input, setInput] = useState("");
 
-      const reader = new FileReader();
+  const handleAddItem = () => {
+    // TODO: Add logic to add input to items list
+    var TEST = document.getElementById("TEST").value
+    if(TEST != ''){
+      var val = items
+      val.push(TEST);
+      setItems=val;
+      document.getElementById("TEST").value = '';
 
-      reader.onload = function (event) {
-        const html = event.target.result;
+    }
+  };
 
-        // Parse the HTML
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
+  return (
+    <>
+      <h8k-navbar header="Item List Manager"></h8k-navbar>
+      <div className="App">
+        <h3>Item List</h3>
+        <input
+          type="text"
+          id="TEST"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Enter item"
+          data-testid="input-field"
+        />
+        <button onClick={handleAddItem} data-testid="add-button">
+          Add Item
+        </button>
+        <ul data-testid="item-list">
+          {items.map((item, index) => (
+            <li key={index} data-testid="list-item">
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
+}
 
-        // Find elements with both id and name, and type is not hidden
-        const elements = doc.querySelectorAll("[id][name]");
-        const validIds = [];
+export default App;
 
-        elements.forEach((el) => {
-          const type = el.getAttribute("type");
-          if (!type || type.toLowerCase() !== "hidden") {
-            validIds.push(el.id);
-          }
-        });
 
-        console.log("Valid IDs found:", validIds);
-        alert("IDs found:\n" + validIds.join("\n"));
-      };
 
-      reader.onerror = function () {
-        alert("Error reading file.");
-        console.error(reader.error);
-      };
 
-      reader.readAsText(file); // Read file as text
-    });
-  </script>
-</body>
-</html>
