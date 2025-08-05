@@ -1,88 +1,91 @@
-<option value="" selected=""></option>
-<option value="1">Abu Dhabi Commercial Bank Ltd.</option>
-<option value="2">American Express Banking Corporation</option>
-<option value="3">Antwerp Diamond Bank N.V</option>
-<option value="4">Arab Bangladesh Bank Ltd.(AB Bank)</option>
-<option value="5">Australia and New Zealand Banking Group Ltd. </option>
-<option value="6">Axis Bank Ltd.</option>
-<option value="7">Bandhan Bank</option>
-<option value="8">Bank International Indonesia</option>
-<option value="9">Bank of America</option>
-<option value="10">Bank of Bahrain and Kuwait B.S.C</option>
-<option value="11">Bank of Baroda</option>
-<option value="12">Bank of Ceylon</option>
-<option value="13">Bank of India</option>
-<option value="14">Bank of Maharashtra</option>
-<option value="15">Bank of Nova Scotia</option>
-<option value="16">Bank of Tokyo - Mitsubishi Ltd.</option>
-<option value="17">Barclays Bank</option>
-<option value="18">BNP Paribas</option>
-<option value="19">Canara Bank</option>
-<option value="20">Catholic Syrian Bank Ltd.</option>
-<option value="21">Central Bank of India</option>
-<option value="22">Central Bureau of Investigation (CBI)</option>
-<option value="23">China Trust Bank</option>
-<option value="24">Citibank N.A</option>
-<option value="25">City Union Bank Ltd.</option>
-<option value="26">Commonwealth Bank of Australia </option>
-<option value="27">Credit Agricole Corporate and Investment Bank</option>
-<option value="28">Credit Suisse A.G </option>
-<option value="29">DBS Bank Ltd.</option>
-<option value="30">Deutsche Bank</option>
-<option value="31">Development Credit Bank Ltd.</option>
-<option value="32">Dhanlaxmi Bank Ltd.</option>
-<option value="33">Doha Bank</option>
-<option value="34">Economic Inteligence Wing (EIW)</option>
-<option value="35">Enforcement Directorate (ED)</option>
-<option value="36">Federal Bank Ltd.</option>
-<option value="37">First Rand Bank Ltd.</option>
-<option value="38">HDFC Bank Ltd.</option>
-<option value="39">Hongkong and Shanghai Banking Corpn. Ltd.</option>
-<option value="40">ICICI Bank Ltd.</option>
-<option value="41">IDBI Bank Ltd</option>
-<option value="42">IDFC Bank Ltd.</option>
-<option value="43">Indian Bank</option>
-<option value="44">Indian Overseas Bank</option>
-<option value="45">IndusInd Bank Ltd.</option>
-<option value="46">Industrial and Commercial Bank of China</option>
-<option value="47">J.P.Morgan Chase Bank N.A</option>
-<option value="48">Jammu and Kashmir Bank Ltd.</option>
-<option value="49">JSC - VTB Bank</option>
-<option value="50">Karnataka Bank Ltd.</option>
-<option value="51">Karur Vysya Bank Ltd.</option>
-<option value="52">Kotak Mahindra Bank Ltd.</option>
-<option value="53">Krung Thai Bank</option>
-<option value="54">Lakshmi Vilas Bank Ltd.</option>
-<option value="55">Mashreqbank</option>
-<option value="56">Mizuho Corporate Bank Ltd.</option>
-<option value="57">Nainital Bank Ltd.</option>
-<option value="58">National Australia Bank</option>
-<option value="59">Non-Banking Financial Company (NBFC)</option>
-<option value="60">Oman International Bank</option>
-<option value="61">Punjab and Sind Bank</option>
-<option value="62">Punjab National Bank</option>
-<option value="63">Rabobank International </option>
-<option value="64">Ratnakar Bank Ltd.</option>
-<option value="65">Reserve Bank of India (RBI)</option>
-<option value="66">Sberbank</option>
-<option value="67">Securities and Exchange Board of India (SEBI)</option>
-<option value="68">Shinhan Bank</option>
-<option value="69">Small Industries Development Bank of India (SIDBI)</option>
-<option value="70">SocieteGenerale</option>
-<option value="71">Sonali Bank</option>
-<option value="72">South Indian Bank Ltd.</option>
-<option value="73">Standard Chartered Bank</option>
-<option value="74">State Bank of India</option>
-<option value="75">State Bank of Mauritius</option>
-<option value="76">Sumitomo Mitsui Banking Corporation</option>
-<option value="77">Tamilnad Mercantile Bank Ltd.</option>
-<option value="78">The Royal Bank of Scotland N.V</option>
-<option value="79">UBS AG</option>
-<option value="80">UCO Bank</option>
-<option value="81">Union Bank of India</option>
-<option value="82">United Overseas Bank Ltd.</option>
-<option value="83">Westpac Banking Corporation</option>
-<option value="84">Woori Bank</option>
-<option value="85">Yes Bank Ltd.</option>
-<option value="86">Other</option>
-<option value="" selected="">PLEASE SELECT</option>
+function getBankName(value) {
+    switch (value) {
+        case "1": return "Abu Dhabi Commercial Bank Ltd.";
+        case "2": return "American Express Banking Corporation";
+        case "3": return "Antwerp Diamond Bank N.V";
+        case "4": return "Arab Bangladesh Bank Ltd.(AB Bank)";
+        case "5": return "Australia and New Zealand Banking Group Ltd.";
+        case "6": return "Axis Bank Ltd.";
+        case "7": return "Bandhan Bank";
+        case "8": return "Bank International Indonesia";
+        case "9": return "Bank of America";
+        case "10": return "Bank of Bahrain and Kuwait B.S.C";
+        case "11": return "Bank of Baroda";
+        case "12": return "Bank of Ceylon";
+        case "13": return "Bank of India";
+        case "14": return "Bank of Maharashtra";
+        case "15": return "Bank of Nova Scotia";
+        case "16": return "Bank of Tokyo - Mitsubishi Ltd.";
+        case "17": return "Barclays Bank";
+        case "18": return "BNP Paribas";
+        case "19": return "Canara Bank";
+        case "20": return "Catholic Syrian Bank Ltd.";
+        case "21": return "Central Bank of India";
+        case "22": return "Central Bureau of Investigation (CBI)";
+        case "23": return "China Trust Bank";
+        case "24": return "Citibank N.A";
+        case "25": return "City Union Bank Ltd.";
+        case "26": return "Commonwealth Bank of Australia";
+        case "27": return "Credit Agricole Corporate and Investment Bank";
+        case "28": return "Credit Suisse A.G";
+        case "29": return "DBS Bank Ltd.";
+        case "30": return "Deutsche Bank";
+        case "31": return "Development Credit Bank Ltd.";
+        case "32": return "Dhanlaxmi Bank Ltd.";
+        case "33": return "Doha Bank";
+        case "34": return "Economic Inteligence Wing (EIW)";
+        case "35": return "Enforcement Directorate (ED)";
+        case "36": return "Federal Bank Ltd.";
+        case "37": return "First Rand Bank Ltd.";
+        case "38": return "HDFC Bank Ltd.";
+        case "39": return "Hongkong and Shanghai Banking Corpn. Ltd.";
+        case "40": return "ICICI Bank Ltd.";
+        case "41": return "IDBI Bank Ltd";
+        case "42": return "IDFC Bank Ltd.";
+        case "43": return "Indian Bank";
+        case "44": return "Indian Overseas Bank";
+        case "45": return "IndusInd Bank Ltd.";
+        case "46": return "Industrial and Commercial Bank of China";
+        case "47": return "J.P.Morgan Chase Bank N.A";
+        case "48": return "Jammu and Kashmir Bank Ltd.";
+        case "49": return "JSC - VTB Bank";
+        case "50": return "Karnataka Bank Ltd.";
+        case "51": return "Karur Vysya Bank Ltd.";
+        case "52": return "Kotak Mahindra Bank Ltd.";
+        case "53": return "Krung Thai Bank";
+        case "54": return "Lakshmi Vilas Bank Ltd.";
+        case "55": return "Mashreqbank";
+        case "56": return "Mizuho Corporate Bank Ltd.";
+        case "57": return "Nainital Bank Ltd.";
+        case "58": return "National Australia Bank";
+        case "59": return "Non-Banking Financial Company (NBFC)";
+        case "60": return "Oman International Bank";
+        case "61": return "Punjab and Sind Bank";
+        case "62": return "Punjab National Bank";
+        case "63": return "Rabobank International";
+        case "64": return "Ratnakar Bank Ltd.";
+        case "65": return "Reserve Bank of India (RBI)";
+        case "66": return "Sberbank";
+        case "67": return "Securities and Exchange Board of India (SEBI)";
+        case "68": return "Shinhan Bank";
+        case "69": return "Small Industries Development Bank of India (SIDBI)";
+        case "70": return "SocieteGenerale";
+        case "71": return "Sonali Bank";
+        case "72": return "South Indian Bank Ltd.";
+        case "73": return "Standard Chartered Bank";
+        case "74": return "State Bank of India";
+        case "75": return "State Bank of Mauritius";
+        case "76": return "Sumitomo Mitsui Banking Corporation";
+        case "77": return "Tamilnad Mercantile Bank Ltd.";
+        case "78": return "The Royal Bank of Scotland N.V";
+        case "79": return "UBS AG";
+        case "80": return "UCO Bank";
+        case "81": return "Union Bank of India";
+        case "82": return "United Overseas Bank Ltd.";
+        case "83": return "Westpac Banking Corporation";
+        case "84": return "Woori Bank";
+        case "85": return "Yes Bank Ltd.";
+        case "86": return "Other";
+        default: return "PLEASE SELECT";
+    }
+}
