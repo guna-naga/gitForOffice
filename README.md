@@ -1,29 +1,88 @@
-function validateAmount(input) {
-  let val = input.value;
-
-  // Remove invalid characters (only digits and one dot allowed)
-  val = val.replace(/[^0-9.]/g, '');
-
-  // Allow only one decimal point
-  const parts = val.split('.');
-  if (parts.length > 2) {
-    val = parts[0] + '.' + parts[1]; // keep only first decimal
-  }
-
-  if (val.includes('.')) {
-    // Limit digits before and after decimal
-    const beforeDot = parts[0].slice(0, 12);
-    const afterDot = parts[1] ? parts[1].slice(0, 2) : '';
-    val = beforeDot + '.' + afterDot.padEnd(2, '0');
-  } else {
-    // No decimal, so add .00
-    val = val.slice(0, 12) + '.00';
-  }
-
-  // Enforce total length of 15
-  if (val.length > 15) {
-    val = val.slice(0, 15);
-  }
-
-  input.value = val;
-}
+<option value="" selected=""></option>
+<option value="1">Abu Dhabi Commercial Bank Ltd.</option>
+<option value="2">American Express Banking Corporation</option>
+<option value="3">Antwerp Diamond Bank N.V</option>
+<option value="4">Arab Bangladesh Bank Ltd.(AB Bank)</option>
+<option value="5">Australia and New Zealand Banking Group Ltd. </option>
+<option value="6">Axis Bank Ltd.</option>
+<option value="7">Bandhan Bank</option>
+<option value="8">Bank International Indonesia</option>
+<option value="9">Bank of America</option>
+<option value="10">Bank of Bahrain and Kuwait B.S.C</option>
+<option value="11">Bank of Baroda</option>
+<option value="12">Bank of Ceylon</option>
+<option value="13">Bank of India</option>
+<option value="14">Bank of Maharashtra</option>
+<option value="15">Bank of Nova Scotia</option>
+<option value="16">Bank of Tokyo - Mitsubishi Ltd.</option>
+<option value="17">Barclays Bank</option>
+<option value="18">BNP Paribas</option>
+<option value="19">Canara Bank</option>
+<option value="20">Catholic Syrian Bank Ltd.</option>
+<option value="21">Central Bank of India</option>
+<option value="22">Central Bureau of Investigation (CBI)</option>
+<option value="23">China Trust Bank</option>
+<option value="24">Citibank N.A</option>
+<option value="25">City Union Bank Ltd.</option>
+<option value="26">Commonwealth Bank of Australia </option>
+<option value="27">Credit Agricole Corporate and Investment Bank</option>
+<option value="28">Credit Suisse A.G </option>
+<option value="29">DBS Bank Ltd.</option>
+<option value="30">Deutsche Bank</option>
+<option value="31">Development Credit Bank Ltd.</option>
+<option value="32">Dhanlaxmi Bank Ltd.</option>
+<option value="33">Doha Bank</option>
+<option value="34">Economic Inteligence Wing (EIW)</option>
+<option value="35">Enforcement Directorate (ED)</option>
+<option value="36">Federal Bank Ltd.</option>
+<option value="37">First Rand Bank Ltd.</option>
+<option value="38">HDFC Bank Ltd.</option>
+<option value="39">Hongkong and Shanghai Banking Corpn. Ltd.</option>
+<option value="40">ICICI Bank Ltd.</option>
+<option value="41">IDBI Bank Ltd</option>
+<option value="42">IDFC Bank Ltd.</option>
+<option value="43">Indian Bank</option>
+<option value="44">Indian Overseas Bank</option>
+<option value="45">IndusInd Bank Ltd.</option>
+<option value="46">Industrial and Commercial Bank of China</option>
+<option value="47">J.P.Morgan Chase Bank N.A</option>
+<option value="48">Jammu and Kashmir Bank Ltd.</option>
+<option value="49">JSC - VTB Bank</option>
+<option value="50">Karnataka Bank Ltd.</option>
+<option value="51">Karur Vysya Bank Ltd.</option>
+<option value="52">Kotak Mahindra Bank Ltd.</option>
+<option value="53">Krung Thai Bank</option>
+<option value="54">Lakshmi Vilas Bank Ltd.</option>
+<option value="55">Mashreqbank</option>
+<option value="56">Mizuho Corporate Bank Ltd.</option>
+<option value="57">Nainital Bank Ltd.</option>
+<option value="58">National Australia Bank</option>
+<option value="59">Non-Banking Financial Company (NBFC)</option>
+<option value="60">Oman International Bank</option>
+<option value="61">Punjab and Sind Bank</option>
+<option value="62">Punjab National Bank</option>
+<option value="63">Rabobank International </option>
+<option value="64">Ratnakar Bank Ltd.</option>
+<option value="65">Reserve Bank of India (RBI)</option>
+<option value="66">Sberbank</option>
+<option value="67">Securities and Exchange Board of India (SEBI)</option>
+<option value="68">Shinhan Bank</option>
+<option value="69">Small Industries Development Bank of India (SIDBI)</option>
+<option value="70">SocieteGenerale</option>
+<option value="71">Sonali Bank</option>
+<option value="72">South Indian Bank Ltd.</option>
+<option value="73">Standard Chartered Bank</option>
+<option value="74">State Bank of India</option>
+<option value="75">State Bank of Mauritius</option>
+<option value="76">Sumitomo Mitsui Banking Corporation</option>
+<option value="77">Tamilnad Mercantile Bank Ltd.</option>
+<option value="78">The Royal Bank of Scotland N.V</option>
+<option value="79">UBS AG</option>
+<option value="80">UCO Bank</option>
+<option value="81">Union Bank of India</option>
+<option value="82">United Overseas Bank Ltd.</option>
+<option value="83">Westpac Banking Corporation</option>
+<option value="84">Woori Bank</option>
+<option value="85">Yes Bank Ltd.</option>
+<option value="86">Other</option>
+<option value="" selected="">PLEASE SELECT</option>
