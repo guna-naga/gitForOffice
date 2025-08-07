@@ -1,9 +1,27 @@
-$('input[class*="AMT_"]').each(function () {
-    var currentAttr = $(this).attr('onchange') || '';
-
-    // If NumberConv(event) is not already part of the attribute, add it
-    if (!currentAttr.includes('NumberConv')) {
-        var updatedAttr = currentAttr ? currentAttr + '; NumberConv(event);' : 'NumberConv(event);';
-        $(this).attr('onchange', updatedAttr);
-    }
-});
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Memorandum and Article of association of Foreign Entity','Memorandum and Article of association of Foreign Entity','CE','F05030702012','DRTI Initiation',11,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Undertaking from Indian party as per Part XI: Annex III','Undertaking from Indian party as per Part XI: Annex III','CE','F05030702012','DRTI Initiation',17,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Chartered Accountant Certificate ','Chartered Accountant Certificate ','CE','F05030702012','DRTI Initiation',18,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Valuation Certificate','Valuation Certificate','CE','F05030702012','DRTI Initiation',19,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Copy of Invoice','Copy of Invoice','CE','F05030702012','DRTI Initiation',20,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Copy of Shipping Bill ','Copy of Shipping Bill ','CE','F05030702012','DRTI Initiation',21,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','LRN allotment  letter and Latest Form ECB2/Form ECB ','LRN allotment  letter and Latest Form ECB2/Form ECB ','CE','F05030702012','DRTI Initiation',22,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','ADR/GDR approval/sanction Note ','ADR/GDR approval/sanction Note ','CE','F05030702012','DRTI Initiation',23,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','o','Agreement of Swap of shares ','Agreement of Swap of shares ','CE','F05030702012','DRTI Initiation',24,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Omnibus FEMA Declaration','Omnibus FEMA Declaration','CE','F05030702012','DRTI Initiation',25,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Transaction FEMA Declaration','Transaction FEMA Declaration','CE','F05030702012','DRTI Initiation',27,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Memorandum and Article of association of IE','Memorandum and Article of association of IE','CE','F05030702012','DRTI Initiation',8,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','OTHERS','OTHERS','CE','F05030702012','DRTI Initiation',1,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Checklist No. 06','Checklist No. 06','CE','F05030702012','DRTI Initiation',2,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Checklist No. 05','Checklist No. 05','CE','F05030702012','DRTI Initiation',3,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Checklist No. 13','Checklist No. 13','CE','F05030702012','DRTI Initiation',26,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Checklist No. 09','Checklist No. 09','CE','F05030702012','DRTI Initiation',4,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','ODI Form I (All Sections A,B,C,D,E)','ODI Form I (All Sections A,B,C,D,E)','CE','F05030702012','DRTI Initiation',5,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','IE/RI letter','IE/RI letter','CE','F05030702012','DRTI Initiation',6,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Copy of Certificate of Incorporation of IE','Copy of Certificate of Incorporation of IE','CE','F05030702012','DRTI Initiation',7,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','A-2 Form ','A-2 Form ','CE','F05030702012','DRTI Initiation',9,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Copy of Certificate of Incorporation Foreign Entity ','Copy of Certificate of Incorporation Foreign Entity ','CE','F05030702012','DRTI Initiation',10,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Board Resolution of IE','Board Resolution of IE','CE','F05030702012','DRTI Initiation',12,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Copy of Foreign Entity  agreements','Copy of Foreign Entity  agreements','CE','F05030702012','DRTI Initiation',13,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Foreign Business License','Foreign Business License','CE','F05030702012','DRTI Initiation',14,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Project Feasibility Report Certificate by IE','Project Feasibility Report Certificate by IE','CE','F05030702012','DRTI Initiation',15,'DRTI');
+Insert into CETRX.DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','PAN card true copy of all Indian Promoters','PAN card true copy of all Indian Promoters','CE','F05030702012','DRTI Initiation',16,'DRTI');
