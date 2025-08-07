@@ -1,27 +1,95 @@
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Memorandum and Article of association of Foreign Entity';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Undertaking from Indian party as per Part XI: Annex III';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Chartered Accountant Certificate ';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Valuation Certificate';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Copy of Invoice';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Copy of Shipping Bill ';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'LRN allotment  letter and Latest Form ECB2/Form ECB ';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'ADR/GDR approval/sanction Note ';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Agreement of Swap of shares ';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Omnibus FEMA Declaration';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Transaction FEMA Declaration';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Memorandum and Article of association of IE';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'OTHERS';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Checklist No. 06';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Checklist No. 05';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Checklist No. 13';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Checklist No. 09';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'ODI Form I (All Sections A,B,C,D,E)';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'IE/RI letter';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Copy of Certificate of Incorporation of IE';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'A-2 Form ';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Copy of Certificate of Incorporation Foreign Entity ';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Board Resolution of IE';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Copy of Foreign Entity  agreements';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'O' WHERE DOC_DESC = 'Foreign Business License';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'Project Feasibility Report Certificate by IE';
-UPDATE CETRX.DOC_MASTER SET DOC_CATEGORY = 'M' WHERE DOC_DESC = 'PAN card true copy of all Indian Promoters';
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Checklist No. 13','Checklist No. 13','CE','F05030702012','DRTI Initiation',26,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Checklist No. 05','Checklist No. 05','CE','F05030702012','DRTI Initiation',3,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Checklist No. 09','Checklist No. 09','CE','F05030702012','DRTI Initiation',4,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','ODI Form I (All Sections A,B,C,D,E)','ODI Form I (All Sections A,B,C,D,E)','CE','F05030702012','DRTI Initiation',5,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','IE or RI letter','IE or RI letter','CE','F05030702012','DRTI Initiation',6,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Copy of Certificate of Incorporation of IE','Copy of Certificate of Incorporation of IE','CE','F05030702012','DRTI Initiation',7,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Memorandum and Article of association of IE','Memorandum and Article of association of IE','CE','F05030702012','DRTI Initiation',8,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','A-2 Form ','A-2 Form ','CE','F05030702012','DRTI Initiation',9,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Copy of Certificate of Incorporation Foreign Entity ','Copy of Certificate of Incorporation Foreign Entity ','CE','F05030702012','DRTI Initiation',10,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Memorandum and Article of association of Foreign Entity','Memorandum and Article of association of Foreign Entity','CE','F05030702012','DRTI Initiation',11,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Board Resolution of IE','Board Resolution of IE','CE','F05030702012','DRTI Initiation',12,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Copy of Foreign Entity  agreements','Copy of Foreign Entity  agreements','CE','F05030702012','DRTI Initiation',13,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Foreign Business License','Foreign Business License','CE','F05030702012','DRTI Initiation',14,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Project Feasibility Report Certificate by IE','Project Feasibility Report Certificate by IE','CE','F05030702012','DRTI Initiation',15,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','PAN card true copy of all Indian Promoters','PAN card true copy of all Indian Promoters','CE','F05030702012','DRTI Initiation',16,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Undertaking from Indian party as per Part XI: Annex III','Undertaking from Indian party as per Part XI: Annex III','CE','F05030702012','DRTI Initiation',17,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Chartered Accountant Certificate ','Chartered Accountant Certificate ','CE','F05030702012','DRTI Initiation',18,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','M','Valuation Certificate','Valuation Certificate','CE','F05030702012','DRTI Initiation',19,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Copy of Invoice','Copy of Invoice','CE','F05030702012','DRTI Initiation',20,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Copy of Shipping Bill ','Copy of Shipping Bill ','CE','F05030702012','DRTI Initiation',21,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','LRN allotment  letter and Latest Form ECB2 or Form ECB ','LRN allotment  letter and Latest Form ECB2 or Form ECB ','CE','F05030702012','DRTI Initiation',22,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','ADR or GDR approval or sanction Note ','ADR or GDR approval or sanction Note ','CE','F05030702012','DRTI Initiation',23,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','o','Agreement of Swap of shares ','Agreement of Swap of shares ','CE','F05030702012','DRTI Initiation',24,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Omnibus FEMA Declaration','Omnibus FEMA Declaration','CE','F05030702012','DRTI Initiation',25,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702012','O','Transaction FEMA Declaration','Transaction FEMA Declaration','CE','F05030702012','DRTI Initiation',27,'DRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','ODI Part I Section A','ODI Part I Section A','CE','F05030702013','DRTI Post Investment',2,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','ODI Part I Section B','ODI Part I Section B','CE','F05030702013','DRTI Post Investment',3,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','ODI Part I Section C','ODI Part I Section C','CE','F05030702013','DRTI Post Investment',4,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','Customer Request Letter','Customer Request Letter','CE','F05030702013','DRTI Post Investment',5,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','Document Evidence for Changes','Document Evidence for Changes','CE','F05030702013','DRTI Post Investment',6,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','Checklist No. 2','Checklist No. 2','CE','F05030702013','DRTI Post Investment',8,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','Checklist No. 08','Checklist No. 08','CE','F05030702013','DRTI Post Investment',9,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702013','O','Checklist No. 03','Checklist No. 03','CE','F05030702013','DRTI Post Investment',10,'DRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702014','M','Customer Letter ','Customer Letter ','CE','F05030702014','RTI Evidence of Investment',2,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702014','M','Documentary Evidence ','Documentary Evidence ','CE','F05030702014','RTI Evidence of Investment',3,'DRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702015','M','Annual Performance Report','Annual Performance Report','CE','F05030702015','DRTI Annual Performance',2,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702015','O','Auditor Certificate','Auditor Certificate','CE','F05030702015','DRTI Annual Performance',3,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702015','O','Board Resolution','Board Resolution','CE','F05030702015','DRTI Annual Performance',4,'DRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702016','M','Chartered Accountant Certificate','Chartered Accountant Certificate','CE','F05030702016','DRTI Disinvestment',2,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702016','M','Certificate of Merger or Dissolution or Winding up of Foreign Entity issued in the host country','Certificate of Merger or Dissolution or Winding up of Foreign Entity issued in the host country','CE','F05030702016','DRTI Disinvestment',3,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702016','M','Board Resolution of the IE for Disinvestment','Board Resolution of the IE for Disinvestment','CE','F05030702016','DRTI Disinvestment',4,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702016','M','Valuation Report','Valuation Report','CE','F05030702016','DRTI Disinvestment',5,'DRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702016','M','Check List No.4','Check List No.4','CE','F05030702016','DRTI Disinvestment',6,'DRTI');
+
+UPDATE DOC_MASTER SET DOC_CATEGORY='O' WHERE DOC_DESC='Auditor Certificate' AND C_MAIN_REF='F05030702015';
+UPDATE DOC_MASTER SET DOC_CATEGORY='O' WHERE DOC_DESC='Board Resolution' AND C_MAIN_REF='F05030702015';
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023','M','Customer Application','Customer Application','CE','F05030702023','FRTI Initiation',2,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023','M','Latest Audited Balance Sheet of the Investee','Latest Audited Balance Sheet of the Investee','CE','F05030702023','FRTI Initiation',3,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023','M','Copy of Certificate of Incorporation, Memorandum and Article of association of Investee','Copy of Certificate of Incorporation, Memorandum and Article of association of Investee','CE','F05030702023','FRTI Initiation',4,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023','M','Board Resolution of Investee','Board Resolution of Investee','CE','F05030702023','FRTI Initiation',5,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023','M','Copy of Agreements','Copy of Agreements','CE','F05030702023','FRTI Initiation',6,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023',' M','Valuation of Shares','Valuation of Shares','CE','F05030702023','FRTI Initiation',7,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023','O','Omnibus FEMA Declaration','Omnibus FEMA Declaration','CE','F05030702023','FRTI Initiation',8,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702023','O','Transaction FEMA Declaration','Transaction FEMA Declaration','CE','F05030702023','FRTI Initiation',9,'FRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702024','O','MT103 or 202 Copy','MT103 or 202 Copy','CE','F05030702024','FRTI Reporting',2,'FRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','M','Sale Purchase Agreement','Sale Purchase Agreement','CE','F05030702025','FRTI Transfer of Shares',2,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','M','Securities Transfer Deed in Form SH 4','Securities Transfer Deed in Form SH 4','CE','F05030702025','FRTI Transfer of Shares',3,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','M','Declaration from the buyer to the effect that he is eligible to acquire securities under FDI policy','Declaration from the buyer to the effect that he is eligible to acquire securities under FDI policy','CE','F05030702025','FRTI Transfer of Shares',4,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','M','Consent Letter of Buyer','Consent Letter of Buyer','CE','F05030702025','FRTI Transfer of Shares',5,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','M','Consent Letter of Seller','Consent Letter of Seller','CE','F05030702025','FRTI Transfer of Shares',6,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','M','Valuation of Shares Report','Valuation of Shares Report','CE','F05030702025','FRTI Transfer of Shares',7,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','O','Omnibus FEMA Declaration','Omnibus FEMA Declaration','CE','F05030702025','FRTI Transfer of Shares',8,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702025','O','Transaction FEMA Declaration','Transaction FEMA Declaration','CE','F05030702025','FRTI Transfer of Shares',9,'FRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702026','M','Investee Company Request Letter','Investee Company Request Letter','CE','F05030702026','Refund of FDI',2,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702026','O','Omnibus FEMA declaration','Omnibus FEMA declaration','CE','F05030702026','Refund of FDI',3,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702026','O','Transaction FEMA declaration','Transaction FEMA declaration','CE','F05030702026','Refund of FDI',4,'FRTI');
+
+
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','M','Customer Request Letter','Customer Request Letter','CE','F05030702027','FRTI Repatriation',2,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','M','Certificate indicating fair value of shares from a Chartered Accountant.','Certificate indicating fair value of shares from a Chartered Accountant.','CE','F05030702027','FRTI Repatriation',3,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','M','No Objection  or  Tax Clearance Certificate from Income Tax authority or Chartered Account.','No Objection  or  Tax Clearance Certificate from Income Tax authority or Chartered Account.','CE','F05030702027','FRTI Repatriation',4,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','O','Auditor’s certificate confirming that all liabilities in India have been either fully paid or adequately provided for.  ','Auditor’s certificate confirming that all liabilities in India have been either fully paid or adequately provided for.  ','CE','F05030702027','FRTI Repatriation',5,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','O','Auditor’s certificate to the effect that the winding up is in accordance with the provisions of the Companies Act, as applicable ','Auditor’s certificate to the effect that the winding up is in accordance with the provisions of the Companies Act, as applicable ','CE','F05030702027','FRTI Repatriation',6,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','O','In case of winding up otherwise than by a court, an auditor’s certificate to the effect that there are no legal proceeding spending in any court in India against the applicant or the company under liquidation and there is no legal impediment in permitting the remittance.
+','In case of winding up otherwise than by a court, an auditor’s certificate to the effect that there are no legal proceeding spending in any court in India against the applicant or the company under liquidation and there is no legal impediment in permitting the remittance.
+','CE','F05030702027','FRTI Repatriation',7,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','O','Valuation of Shares ','Valuation of Shares ','CE','F05030702027','FRTI Repatriation',8,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','O','RBI Approval','RBI Approval','CE','F05030702027','FRTI Repatriation',9,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','O','Omnibus FEMA declaration','Omnibus FEMA declaration','CE','F05030702027','FRTI Repatriation',10,'FRTI');
+Insert into DOC_MASTER (C_MAIN_REF,DOC_CATEGORY,DOC_DESC,DOC_NAME,EE_CE,FUNC_ID,FUNC_NAME,I_SEQ_NUM,MODL_NM) values ('F05030702027','O','Transaction FEMA declaration','Transaction FEMA declaration','CE','F05030702027','FRTI Repatriation',11,'FRTI');
